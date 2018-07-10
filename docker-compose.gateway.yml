@@ -1,0 +1,27 @@
+version: '2.3'
+
+services:
+
+    api_gateway:
+      image: jwilder/nginx-proxy
+      volumes:
+        - "/var/run/docker.sock:/tmp/docker.sock:ro"
+      ports:
+        - "80:80"
+
+    node:
+        build:
+          context: ./nodejs_service 
+        depends_on:
+          - api_gateway
+        environment:
+          VIRTUAL_HOST: 'node'
+    
+    java:
+        build:
+          context: ./java_service 
+        depends_on:
+          - api_gateway
+        environment:
+          VIRTUAL_HOST: 'java'
+

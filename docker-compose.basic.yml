@@ -1,0 +1,16 @@
+version: '2.3'
+
+services:
+
+    node:
+        build:
+          context: ./nodejs_service
+        ports:
+          - "8090:8080" 
+    
+    java:
+        build:
+          context: ./java_service 
+        ports:
+          - "8080:8080"
+
