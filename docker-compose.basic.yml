@@ -9,8 +9,7 @@ services:
           - "8090:8080" 
     
     java:
-        build:
-          context: ./java_service 
+        image: java_service:1.0.0
         ports:
           - "8080:8080"
 
