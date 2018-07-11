@@ -83,7 +83,11 @@ Atención a la cabecera *x-origin*:
 curl -H 'Host: node' -i localhost/foo
 ```
 
-## Service Mesh (Patrón sidecar)
+## Service Mesh
+
+Este concepto es que proporciona una mayor felixibilidad entre los componentes de una arquitectura de microservicios.
+
+
 
 
 
