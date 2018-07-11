@@ -1,0 +1,13 @@
+{
+  "name": "docker_node_microsrevice",
+  "version": "1.0.0",
+  "description": "This is an example of microsrevice with Node + Docker",
+  "author": "pablopl87@gmail.com",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
