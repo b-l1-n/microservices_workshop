@@ -87,6 +87,15 @@ curl -H 'Host: node' -i localhost/foo
 
 Este concepto es que proporciona una mayor felixibilidad entre los componentes de una arquitectura de microservicios.
 
+El objetivo de una malla de servicio es, que entre cada servicio haya lo siguiente:
+
+- Orquestación de Contenedores
+- Descubrimiento de Servicios
+- Balanceo de Carga
+- Encriptación
+- Seguridad
+- Auto Recovery
+
 
 
 
